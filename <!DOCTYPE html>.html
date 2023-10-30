@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darba algas kalkulators</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Darba algas kalkulators</h1>
+        <form id="salary-form">
+            <label for="hourly-wage">Stundas alga (EUR):</label>
+            <input type="number" step="0.01" id="hourly-wage">
+            <label for="hours-worked">Stundas mēnesī:</label>
+            <input type="number" step="0.01" id="hours-worked">
+            <label for="overtime-hours">Pārlaimstības stundas:</label>
+            <input type="number" step="0.01" id="overtime-hours">
+            <label for="tax-rate">Nodokļu likme (%):</label>
+            <input type="number" step="0.01" id="tax-rate">
+            <button type="submit">Aprēķināt</button>
+        </form>
+        <p id="result">Alga: 0 EUR</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
